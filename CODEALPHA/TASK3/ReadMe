@@ -1,0 +1,163 @@
+# CodeAlpha Data Analytics Internship - Task 3: Data Visualization
+
+## Project Overview
+
+This project focuses on transforming raw Spotify music data into meaningful visualizations that reveal patterns, trends, and insights. Using Python visualization libraries, an interactive dashboard was created to explore audio features, genre characteristics, and factors influencing song popularity.
+
+## Objectives
+
+* Transform raw data into visual insights.
+* Create professional charts and dashboards.
+* Identify patterns and relationships within music data.
+* Communicate findings through data storytelling.
+* Support decision-making with actionable recommendations.
+
+## Dataset
+
+Spotify Tracks Dataset
+
+The dataset contains information such as:
+
+* Track Name
+* Genre
+* Popularity
+* Danceability
+* Energy
+* Valence
+* Acousticness
+* Tempo
+* Duration
+
+## Technologies Used
+
+* Python
+* Pandas
+* Matplotlib
+* Seaborn
+* NumPy
+
+## Data Preparation
+
+The following preprocessing steps were performed:
+
+* Renamed columns for consistency.
+* Removed invalid characters from IDs.
+* Converted IDs into numeric format.
+* Removed missing values.
+* Removed duplicate tracks.
+* Created a new feature:
+
+  * Duration (minutes)
+
+## Visualizations Created
+
+### 1. Genre Mood Analysis (Box Plot)
+
+Compares positivity (Valence) across different music genres.
+
+**Insight:**
+
+* Acoustic and Pop genres show higher positivity.
+* Metalcore and Dubstep tend to have lower positivity levels.
+
+### 2. Popularity Analysis (Scatter Plot)
+
+Visualizes the relationship between:
+
+* Energy
+* Danceability
+* Popularity
+
+**Insight:**
+
+* Highly popular songs generally combine high energy with high danceability.
+
+### 3. Correlation Heatmap
+
+Shows relationships between key audio features:
+
+* Popularity
+* Danceability
+* Energy
+* Acousticness
+* Valence
+* Tempo
+
+**Insight:**
+
+* Energy strongly correlates with loudness.
+* Acousticness is negatively related to energy.
+
+## Dashboard
+
+The project combines all visualizations into a single dashboard titled:
+
+**"The Anatomy of Music: Audio Features & Genre Insights"**
+
+This dashboard provides a comprehensive overview of musical characteristics and listener preferences.
+
+## Data Storytelling
+
+### Key Findings
+
+#### Mood Mapping
+
+Different genres exhibit distinct emotional profiles.
+
+#### Hit Song Formula
+
+Songs with higher energy and danceability tend to achieve greater popularity.
+
+#### Hidden Relationships
+
+Strong correlations exist between several audio features, revealing how musical elements interact.
+
+## Business Recommendations
+
+### For Music Labels
+
+Prioritize tracks with:
+
+* Energy > 0.7
+* Danceability > 0.7
+
+to improve commercial success potential.
+
+### For Playlist Curators
+
+Develop mood-based playlists using combinations of:
+
+* High Energy
+* Low Valence
+
+to target niche listener preferences.
+
+## Project Structure
+
+├── dataset.csv
+
+├── data_visualization.py
+
+├── dashboard.png
+
+└── README.md
+
+## How to Run
+
+Install required libraries:
+
+pip install pandas numpy matplotlib seaborn
+
+Run the project:
+
+python data_visualization.py
+
+## Learning Outcomes
+
+* Data Cleaning
+* Feature Engineering
+* Data Visualization
+* Dashboard Design
+* Data Storytelling
+* Business Insight Generation
+
