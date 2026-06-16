@@ -1,0 +1,145 @@
+# CodeAlpha Data Analytics Internship - Task 2: Exploratory Data Analysis (EDA)
+
+## Project Overview
+
+This project performs Exploratory Data Analysis (EDA) on the Superstore dataset to uncover business insights, identify trends and anomalies, and validate assumptions using statistical methods and data visualization.
+
+## Objectives
+
+* Understand the dataset structure and data types.
+* Identify trends, patterns, and anomalies.
+* Detect potential data quality issues.
+* Test business hypotheses using statistical analysis.
+* Generate visual insights through charts and dashboards.
+
+## Dataset
+
+Dataset Used: Superstore.csv
+
+The dataset contains information about:
+
+* Orders
+* Sales
+* Profit
+* Discounts
+* Customer Segments
+* Product Categories
+* Regions
+* Shipping Details
+
+## Business Questions
+
+1. Which product categories generate the highest and lowest profits?
+2. Does offering higher discounts affect profitability?
+3. Which regions and customer segments perform best?
+4. Are there anomalies such as negative profits or shipping issues?
+5. Is there a significant relationship between sales and profit?
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* SciPy
+
+## Data Preparation
+
+The following preprocessing steps were performed:
+
+* Converted Order Date and Ship Date into datetime format.
+* Created Month and Year features.
+* Calculated Profit Margin.
+* Calculated Shipping Days.
+
+## Anomaly Detection
+
+The analysis identifies:
+
+* Transactions with negative profit.
+* Loss-making product sub-categories.
+* Orders where shipping dates occur before order dates.
+
+## Visualizations
+
+A dashboard containing four analytical visualizations:
+
+### 1. Monthly Sales vs Profit Trend
+
+Shows how sales and profit change over time.
+
+### 2. Discount vs Profit Analysis
+
+Examines the relationship between discount rates and profitability.
+
+### 3. Average Profit by Sub-Category
+
+Highlights profitable and loss-making product groups.
+
+### 4. Correlation Heatmap
+
+Displays relationships among Sales, Quantity, Discount, and Profit.
+
+## Statistical Hypothesis Testing
+
+### Test 1: Independent T-Test
+
+Comparison of average profits between:
+
+* Consumer Segment
+* Corporate Segment
+
+### Test 2: One-Way ANOVA
+
+Comparison of average sales across:
+
+* East
+* West
+* Central
+* South Regions
+
+### Test 3: Pearson Correlation
+
+Measures the strength of relationship between:
+
+* Sales
+* Profit
+
+## Key Insights
+
+* Identified product sub-categories contributing to losses.
+* Evaluated the impact of discounts on profitability.
+* Determined whether customer segments differ significantly in profit generation.
+* Assessed regional sales performance.
+* Verified relationships among important business metrics.
+
+## Project Structure
+
+├── Superstore.csv
+
+├── eda_analysis.py
+
+├── dashboard_output.png
+
+└── README.md
+
+## How to Run
+
+Install required libraries:
+
+pip install pandas numpy matplotlib seaborn scipy
+
+Run the analysis:
+
+python eda_analysis.py
+
+## Learning Outcomes
+
+* Data Cleaning and Preparation
+* Exploratory Data Analysis (EDA)
+* Business Insight Generation
+* Statistical Hypothesis Testing
+* Data Visualization
+* Anomaly Detection
+
