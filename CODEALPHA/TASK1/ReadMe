@@ -1,0 +1,78 @@
+# CodeAlpha Data Analytics Internship - Task 1: Web Scraping
+
+## Project Description
+
+This project demonstrates web scraping using Python. The script extracts internal Wikipedia article links from the "Web Scraping" Wikipedia page and stores the collected data in a structured CSV file.
+
+## Objective
+
+The objective of this project is to:
+
+* Learn web scraping fundamentals.
+* Extract data from web pages using Python.
+* Understand HTML structure and hyperlink extraction.
+* Create a dataset for further analysis.
+
+## Technologies Used
+
+* Python
+* Requests
+* BeautifulSoup (bs4)
+* Pandas
+
+## Data Source
+
+Wikipedia Article:
+https://en.wikipedia.org/wiki/Web_scraping
+
+## Features
+
+* Sends an HTTP request to the target webpage.
+* Parses HTML content using BeautifulSoup.
+* Extracts article titles and corresponding Wikipedia links.
+* Converts extracted data into a Pandas DataFrame.
+* Saves the dataset as a CSV file.
+* Automatically creates the destination folder if it does not exist.
+
+## Output
+
+The generated CSV file contains:
+
+| Column Name | Description                       |
+| ----------- | --------------------------------- |
+| Title       | Name of the Wikipedia article     |
+| Link        | Full URL of the Wikipedia article |
+
+Example:
+
+| Title         | Link                                        |
+| ------------- | ------------------------------------------- |
+| Data scraping | https://en.wikipedia.org/wiki/Data_scraping |
+| HTML          | https://en.wikipedia.org/wiki/HTML          |
+
+## Project Structure
+
+├── web_scraping.py
+
+├── scraped_data.csv
+
+└── README.md
+
+## How to Run
+
+1. Install required libraries:
+   pip install requests beautifulsoup4 pandas
+
+2. Run the script:
+   python web_scraping.py
+
+3. The output file will be saved as:
+   C:\CODEALPHA\TASK1\scraped_data.csv
+
+## Learning Outcomes
+
+* Web scraping using Requests and BeautifulSoup
+* HTML parsing and navigation
+* Data extraction and storage
+* Creating structured datasets from web content
+
